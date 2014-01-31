@@ -1,0 +1,56 @@
+quitar-game
+====================================
+quitar-game is a c++ version of the "freds on fire game"
+by Olli Salli, Tuomas Perälä, Ville Virkkala.
+The audio files which are required for the game are not 
+included in this repository (see dependencies below). 
+
+
+This version of the program is made for Linux
+Dependencies
+------------
+- g++, make
+- cmake
+- Qt >= 4.8
+- opengl libraries
+- glfw libraries
+- sfml : get the SDK from the following link 
+         http://www.sfmldev.org/download.php and copy the
+         libsfml-audio.so.2,libsfml-graphics.so.2,
+         libsfml-system.so.2,libsfml-window.so.2 files to
+	 /usr/local/libs and the SFML include folder to 
+         /usr/local/include  
+- freetype : you need to make a symbolic link from freetype1 to
+             freetype2
+
+You may get the audio files by dowloading the free "frets on fire" game from http://fretsonfire.sourceforge.net/.
+You should then create a directory "resources" at the same place you have the src folder. The resources folder should then contain files:
+fiba1.ogg, fiba2.ogg, fiba3.ogg, fiba4.ogg, fiba5.ogg, fiba6.ogg, perfect1.ogg and folder "songs" that contain folders bangbang, defy and
+twibmpg 
+
+
+Compilation/installation
+-----------
+    $ cmake src
+    $ make
+
+Copyright info
+--------------
+/*  
+ * Copyright (C) 2006  Olli Salli, Tuomas Perälä, Ville Virkkala
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
